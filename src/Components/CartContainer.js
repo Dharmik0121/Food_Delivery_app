@@ -7,6 +7,7 @@ import { actionType } from '../context/reducer'
 import { useStateValue } from '../context/StateProvider'
 import emptyCart from '../img/emptyCart.svg';
 import CartItem from './CartItem'
+import { useNavigate } from 'react-router-dom'
 
 const CartContainer = () => {
 
@@ -78,7 +79,7 @@ const CartContainer = () => {
                         </div>
 
                         {user ? (
-                            <motion.button whileTap={{ scale: 0.8 }} type='button' className='w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-200 text-gray-50 text-lg my-10 hover:shadow-2xl '>
+                            <motion.button whileTap={{ scale: 0.8 }} type='button' onClick={clearCart} className='w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-200 text-gray-50 text-lg my-10 hover:shadow-2xl '>
                                 Check Out
                             </motion.button>
                         ) : (

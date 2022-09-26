@@ -4,9 +4,6 @@ import HeroBg from '../img/heroBg.png'
 import I1 from '../img/i1.png'
 import { heroData } from '../utils/data'
 
-
-
-
 const HomeContainer = () => {
   return (
     <section className='grid grid-cols-1 md:grid-cols-2 gap-2 w-full' id='home'>
@@ -32,14 +29,6 @@ const HomeContainer = () => {
         <img src={HeroBg} className='ml-auto h-420 w-full lg:w-auto lg:h-685' alt='hero-bg' />
 
         <div className='w-full lg:px-32 h-full absolute flex flex-wrap top-0 left-0 items-center justify-center gap-4 md:-left-20 py-4'>
-          {/* {heroData && heroData.map((n) => (
-            <div key={n.id} className=' lg:w-190 p-4 bg-cardOverlay backdrop-blur-md flex-col rounded-3xl items-center justify-center flex'>
-              <img src={n.imageSrc} className=' w-20 -mt-10 lg:w-40 lg:-mt-20' alt='i1' />
-              <p className='text-base lg:text-lg font-semibold text-textColo\r mt-2 md:mt-4'>{n.name}</p>
-              <p className='text-[12px] lg:text-sm text-lighttextGray font-semibold lg:my-3 my-1'>{n.decp} </p>
-              <p className='text-sm font-semibold text-headingColor'><span className='text-xs text-red-500'>$ </span>{n.price}</p>
-            </div>
-          ))} */}
           <div className=' lg:w-200 p-4 flex-col rounded-3xl items-center justify-center flex'>
             <img src={I1} className=' w-375 -mt-10 lg:w-1000 lg:-mt-20' alt='i1' />
           </div>
